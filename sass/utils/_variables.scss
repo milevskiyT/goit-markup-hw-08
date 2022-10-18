@@ -1,0 +1,60 @@
+
+    $--hover-icon: rgba(117, 117, 117, 1);
+    $--primary-text-color: rgba(33, 33, 33, 1);
+    $--logo-link-color: rgba(33, 150, 243, 1);
+    $--logo-color: rgba(0, 0, 0, 1);
+    $--primary-background-color: rgba(255, 255, 255, 1);
+    $--secondary-text: rgba(117, 117, 117, 1);
+    $--third-text: rgba(255, 255, 255, 0.6);
+    $--hero-color: rgba(47, 48, 58, 1);
+    $--active-button: rgba(24, 140, 232, 1);
+    $--second-background: rgba(245, 244, 250, 1);
+    $--color-border-heade: rgba(236, 236, 236, 1);
+    $--border-porfolio: rgba(238, 238, 238, 1);
+    $--color-mini-iconrgbargba: rgba(175, 177, 184, 1);
+    $--background-overlay: rgba(196, 196, 196, 1);
+    $--portfolio-hover: rgba(33, 150, 243, 0.9);
+    $--border-modal: rgba(33, 33, 33, 0.2);
+
+    %centeredFlex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    %bodytext{
+        font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+
+    }
+
+    %transit{
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+body {
+    @extend %bodytext;
+    color: $--primary-text-color;
+    background-color: $--primary-background-color;
+}
+
+         @mixin mobile {
+            @media screen and (min-width:480px)
+            
+            {
+                @content;
+            }
+         };
+    
+         @mixin tablet {
+             @media screen and (min-width:768px)
+             {
+                @content;}
+         };
+                  @mixin desktop {
+                      @media screen and (min-width:1200px)
+                       {
+                        @content;
+                    }
+                  };

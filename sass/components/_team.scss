@@ -1,0 +1,173 @@
+.section__team {
+    background-color: $--second-background;
+}
+
+.team-foto__list {
+}
+.team-foto__item:nth-last-child(n) {
+    margin-bottom: 30px;
+}   
+
+.team-foto__item {
+    background-color: $--primary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.team__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $--primary-text-color;
+   
+}
+.team__header--margin {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.team__header--margin {
+    @include tablet {
+        margin-bottom: 50px;
+    }
+}
+
+.team__header--margin {
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+
+
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $--primary-text-color;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team__position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $--secondary-text;
+}
+
+/* soc iconku  pracivnukiv*/
+.client__container--list {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icon {
+@extend %centeredFlex;
+    gap: 10px;
+    padding-bottom: 24px;
+}
+
+.social-icon .social-icon__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: $--primary-background-color;
+    fill: $--color-mini-iconrgbargba;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon .social-icon__link:hover,
+.social-icon .social-icon__link:focus {
+    background-color: $--logo-link-color;
+    fill: $--primary-background-color;
+}
+
+
+
+
+
+
+
+
+// .section__team {
+//     background-color: $--second-background;
+// }
+
+// .team-foto__list {
+//     display: flex;
+//     margin-top: 50px;
+// }
+
+// .team-foto__item {
+//     width: calc((100% - 90px) / 4);
+//     background-color: $--primary-background-color;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// .team-foto__item:not(:first-child) {
+//     margin-left: 30px;
+// }
+
+// .team {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
+
+// .team__name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.2;
+//     color: $--primary-text-color;
+//     text-align: center;
+// }
+
+// .team__position {
+//     margin-top: 10px;
+//     margin-bottom: 16px;
+//     text-align: center;
+//     font-size: 16px;
+//     line-height: 1.2;
+//     color: $--secondary-text;
+// }
+
+// /* soc iconku  pracivnukiv*/
+// .client__container--list {
+//     display: flex;
+//     gap: 30px;
+// }
+
+// .social-icon {
+//     @extend %centeredFlex;
+//     gap: 10px;
+// }
+
+// .social-icon .social-icon__link {
+//     width: 44px;
+//     height: 44px;
+//     display: flex;
+//     border-radius: 50px;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: $--primary-background-color;
+//     fill: $--color-mini-iconrgbargba;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .social-icon .social-icon__link:hover,
+// .social-icon .social-icon__link:focus {
+//     background-color: $--logo-link-color;
+//     fill: $--primary-background-color;
+// }

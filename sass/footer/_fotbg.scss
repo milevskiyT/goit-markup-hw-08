@@ -1,0 +1,77 @@
+.footerbg {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $--hero-color;
+}
+.link-filter {
+    text-decoration: none;
+}
+
+.filter {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $--primary-text-color;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.filter-foto {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $--secondary-text;
+    text-decoration: none;
+}
+
+/* footer */
+.container-foter {
+    display: flex;
+    align-items: baseline;
+}
+
+.logofot {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $--primary-background-color;
+    text-decoration: none;
+}
+
+.logo-fotweb {
+    color: $--logo-link-color;
+}
+
+.logoclas {
+    margin-bottom: 20px;
+}
+
+/* adress */
+
+.footer-nav .footer-link:hover,
+.footer-nav .footer-link:focus {
+    color: $--logo-link-color;
+}
+
+.footer-nav :not(:first-child) {
+    margin-top: 9px;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $--third-text;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigat {
+    color: $--primary-background-color;
+}

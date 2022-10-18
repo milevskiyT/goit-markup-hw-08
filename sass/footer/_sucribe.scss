@@ -1,0 +1,57 @@
+.box-telegram {
+    margin-left: auto;
+}
+.fottext {
+    color: $--primary-background-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.box-social {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $--hero-color;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+}
+
+
+.button-box>.icon-telegram {
+    margin-left: 10px;
+}
+
+.button-box {
+    width: 200px;
+@extend %centeredFlex;
+    margin-left: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $--primary-background-color;
+    background-color: $--logo-link-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    @extend%transit;
+}
+
+.button-box:hover,
+.button-box:focus {
+    color: $--primary-background-color;
+    background-color: $--active-button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

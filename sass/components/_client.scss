@@ -1,0 +1,18 @@
+.client__container .client__container--link {
+    width: 170px;
+    height: 92px;
+    @extend %centeredFlex;
+    border: 1px solid rgba(175, 177, 184, 1);
+    background-color: $--primary-background-color;
+    fill: $--color-mini-iconrgbargba;
+    gap: 30px;
+    border-radius: 4px;
+@extend%transit;
+}
+
+.client__container .client__container--link:hover,
+.client__container .client__container--link:focus {
+    fill:$--logo-link-color;
+    background-color: $--primary-background-color;
+    border: 1px solid $--logo-link-color;
+}

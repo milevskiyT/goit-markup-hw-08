@@ -1,0 +1,27 @@
+.footer1 .link1 {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $--primary-background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer1 .link1:hover,
+.footer1 .link1:focus {
+    background-color: $--logo-link-color;
+    fill: $--primary-background-color;
+}.conect {
+    margin-left: 93px;
+}
+
+.list-social {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 20px;
+}

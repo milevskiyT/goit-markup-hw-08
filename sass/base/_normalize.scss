@@ -1,0 +1,81 @@
+*::before *::after {
+    box-sizing: border-box;
+}
+.container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@include tablet {
+    .container {
+            width: 768px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 0;
+            margin-right: auto;
+            
+        }
+}
+
+
+@include desktop {
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+@include desktop {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* pading margim */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

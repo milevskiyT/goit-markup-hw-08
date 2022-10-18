@@ -1,0 +1,117 @@
+.work {
+    display: none;
+    
+    margin-bottom: 94px;
+}
+.work {
+    @include desktop {
+        display: block;
+    }
+}
+
+.work__header--margin {
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+.work__header--margin{
+ @include tablet {
+    margin-bottom: 50px;
+ } }
+ .work__header--margin {
+     @include desktop {
+         margin-bottom: 50px;
+     }
+ }
+ 
+
+.work__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $--primary-text-color;
+}
+
+.workcard {
+    display: flex;
+    gap: 30px;
+}
+
+.workard__list {
+    width: calc((100% - 60px) / 3);
+    @extend %centeredFlex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $--primary-background-color;
+}
+
+.boxthumb {
+    position: relative;
+}
+
+.boxthumb__description {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    @extend %centeredFlex;
+    background-color: rgba(47, 48, 58, 0.8);
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+// .work {
+//     display: none;
+    
+//     margin-bottom: 94px;
+// }
+// .work {
+//     @include desktop {
+//         display: block;
+//     }
+// }
+
+
+
+// .work__header {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     letter-spacing: 0.03em;
+//     text-align: center;
+//     color: $--primary-text-color;
+// }
+
+// .workcard {
+//     display: flex;
+//     gap: 30px;
+// }
+
+// .workard__list {
+//     width: calc((100% - 60px) / 3);
+//     @extend %centeredFlex;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     color: $--primary-background-color;
+// }
+
+// .boxthumb {
+//     position: relative;
+// }
+
+// .boxthumb__description {
+//     width: 100%;
+//     height: 70px;
+//     position: absolute;
+//     @extend %centeredFlex;
+//     background-color: rgba(47, 48, 58, 0.8);
+//     left: 0;
+//     bottom: 0;
+// }

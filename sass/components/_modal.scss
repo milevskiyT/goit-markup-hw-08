@@ -1,0 +1,214 @@
+
+.modal {
+    flex-direction: column;
+    width: 521px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $--primary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+.close-button {
+@extend %centeredFlex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* icon button */
+.icon-close {
+    position: absolute;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $--primary-background-color;
+}
+
+.close-button:hover,
+.close-button:focus {
+    fill: $--logo-link-color;
+}
+
+/* Adds animation when hovering. */
+
+
+.modal-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 2px;
+}
+
+.button-modal {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $--primary-background-color;
+    background-color: $--logo-link-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 52px;
+    margin-top: 30px;
+@extend%transit;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+    color: $--primary-background-color;
+    background-color: $--active-button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal {
+    padding: 40px 40px;
+}
+
+.contract-text {
+    color: $--secondary-text;
+    border-radius: 4px;
+    transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 20px;
+}
+
+.contract-link {
+    color: $--logo-link-color;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.modal-transformation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.modal-transformation svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translatey(-50%);
+}
+
+textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid $--border-modal;
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 16px;
+    padding-top: 12px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+}
+
+.modal-transformation input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border-radius: 4px;
+    border: 1px solid $--border-modal;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-transformation>.primary-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $--secondary-text;
+    margin-bottom: 4px;
+}
+
+.modal-submit {
+    @extend %centeredFlex;
+}
+
+.modal-transformation svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-transformation:focus-within svg {
+    fill: $--logo-link-color;
+}
+
+.modal-transformation:focus-within textarea {
+    border: 1px solid $--logo-link-color;
+}
+
+.modal-transformation:focus-within input {
+    border: 1px solid $--logo-link-color;
+}
+
+.label {
+    @extend %centeredFlex;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.checkbox:checked+.icon-contr {
+    background-color: $--logo-link-color;
+    background-size: contain;
+    background-origin: content-box;
+    border-color: $--logo-link-color;
+}
+
+.icon-contr {
+    display: inline-block;
+    border: 2px solid $--primary-text-color;
+    border-radius: 2px;
+    margin-right: 10px;
+}

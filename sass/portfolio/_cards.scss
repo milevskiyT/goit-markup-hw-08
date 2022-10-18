@@ -1,0 +1,64 @@
+.foto-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.flex-elements {
+    background-color: $--primary-background-color;
+}
+
+.link-filter {
+    display: block;
+}
+
+.link-filter:hover,
+.link-filter:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.border-foto {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: $--border-porfolio;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.border-foto {
+    display: block;
+}
+.animation-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    color: $--primary-background-color;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flex-elements:hover .portfolio-text {
+    transform: translateY(0);
+    background-color: $--portfolio-hover;
+}
