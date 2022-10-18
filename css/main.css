@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button, .label, .modal-submit, .close-button, .button-box, .client__container .client__container--link, .boxthumb__description, .workard__list, .social-icon, .peculiarities, .ligament__link, .ligament, .navigation {
+.button, .label, .modal-submit, .close-button, .conect, .button-box, .box-social, .box-telegram, .footer-nav, .adresscont, .boxthumb__description, .workard__list, .social-icon, .peculiarities, .ligament__link, .ligament, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,10 +30,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.header {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .header {
     display: block;
@@ -46,55 +42,73 @@ body {
   }
 }
 
+.ligament, .navigation {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
-  .header {
-    border-bottom: 1px solid rgb(236, 236, 236);
-  }
-  .header__container {
+  .ligament,
+.navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header__logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin-left: 0;
-    padding-top: 25px;
-    padding-bottom: 24px;
-  }
-  .header__logoweb {
-    color: rgb(33, 150, 243);
+}
+
+@media screen and (min-width: 768px) {
+  .ligament,
+.navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
+
+.header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header__logoweb {
+  color: rgb(33, 150, 243);
+}
+
 /* NAVIGATION */
 /* Portfolio */
-@media screen and (min-width: 1200px) {
-  .ligament__item--marg {
-    margin-right: 50px;
-  }
+.ligament__item--marg {
+  margin-right: 50px;
 }
+
 /*  полоска */
-@media screen and (min-width: 1200px) {
-  .curent::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: -2px;
-    background-color: rgb(33, 150, 243);
-    border-radius: 2px;
-  }
+.curent::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: -2px;
+  background-color: rgb(33, 150, 243);
+  border-radius: 2px;
 }
-@media screen and (min-width: 1200px) {
-  .navigation__link.curent {
-    color: rgb(33, 150, 243);
-  }
+
+.navigation__link.curent {
+  color: rgb(33, 150, 243);
 }
+
 /* полоска */
 .navigation {
   margin-left: 93px;
@@ -310,13 +324,6 @@ body {
 }
 
 /* soc iconku  pracivnukiv*/
-.client__container--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
 .social-icon {
   gap: 10px;
   padding-bottom: 24px;
@@ -379,8 +386,8 @@ body {
 
 .work__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: rgb(33, 33, 33);
@@ -416,13 +423,36 @@ body {
 }
 
 .client__container .client__container--link {
-  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
   height: 92px;
   border: 1px solid rgb(175, 177, 184);
   background-color: rgb(255, 255, 255);
   fill: rgb(175, 177, 184);
-  gap: 30px;
   border-radius: 4px;
+}
+
+.client__container--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.client-section {
+  padding-bottom: 60px;
 }
 
 .client__container .client__container--link:hover,
@@ -433,12 +463,6 @@ body {
 }
 
 .footerbg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgb(47, 48, 58);
@@ -466,15 +490,6 @@ body {
 }
 
 /* footer */
-.container-foter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .logofot {
   font-family: "Raleway";
   font-style: normal;
@@ -492,6 +507,20 @@ body {
 
 .logoclas {
   margin-bottom: 20px;
+}
+
+.adresscont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* adress */
@@ -522,6 +551,10 @@ body {
 
 .box-telegram {
   margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .fottext {
@@ -534,14 +567,15 @@ body {
 }
 
 .box-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -560,8 +594,8 @@ body {
 }
 
 .button-box {
+  margin-top: 20px;
   width: 200px;
-  margin-left: 10px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -572,6 +606,8 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .button-box:hover,
@@ -610,7 +646,12 @@ body {
 }
 
 .conect {
-  margin-left: 93px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .list-social {
