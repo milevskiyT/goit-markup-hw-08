@@ -123,6 +123,18 @@ body {
 /* NAVIGATION */
 /* Portfolio */
 @media screen and (min-width: 768px) {
+  .ligament__item--marg:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ligament__item--marg:first-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .ligament__item--marg {
     margin-right: auto;
   }

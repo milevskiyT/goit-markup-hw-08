@@ -97,6 +97,16 @@
     }
 /* NAVIGATION */
 /* Portfolio */
+.ligament__item--marg:first-child{
+@include tablet {
+    margin-bottom: 10px;
+}}
+.ligament__item--marg:first-child {
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
 .ligament__item--marg {
     @include tablet {
         margin-right: auto;
@@ -227,6 +237,7 @@
         padding: 0;
     }
 }
+
 /* tel+adress */
 .ligament {
     @extend %centeredFlex;
