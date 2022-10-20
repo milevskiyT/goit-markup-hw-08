@@ -25,6 +25,15 @@
     color: $--primary-text-color;
    
 }
+.team__header{
+    @include desktop{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $--primary-text-color;}
+}
 .team__header--margin {
     margin-top: 60px;
     margin-bottom: 30px;

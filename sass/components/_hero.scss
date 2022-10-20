@@ -25,6 +25,17 @@
     text-transform: uppercase;
     color: $--primary-background-color;
 }
+&__title{
+    @include desktop{
+        font-weight: 900;
+            font-size: 40px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $--primary-background-color;
+    }
+
+}
 
 &__button--additionally {
     font-family: inherit;
