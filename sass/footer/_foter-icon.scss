@@ -28,12 +28,23 @@
     margin-bottom: 60px;
 }
 .conect {
+    @include tablet{
+        margin-left: 165px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+}
+.conect {
     @include desktop {
         @extend %centeredFlex;
         margin-top: 0;
         margin-bottom: 0;
+        margin-left: 93px;
+        align-items: flex-start;
     }
 }
+
 .list-social {
     display: flex;
     align-items: baseline;
@@ -62,11 +73,7 @@
     fill: $--primary-background-color;
 }
 
-.conect {
-    @include desktop {
-    margin-left: 93px;
-    align-items: flex-start;
-}}
+
 
 .list-social {@include desktop {
     display: flex;

@@ -3,6 +3,19 @@
     padding-bottom: 60px;
     background-color: $--hero-color;
 }
+
+.footerbg {
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: $--hero-color;
+    }
+}
+
+
+
 .link-filter {
     text-decoration: none;
 }
@@ -90,14 +103,7 @@
     color: $--primary-background-color;
 }
 
-.footerbg {
-    @include desktop {
-    display: flex;
-    align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $--hero-color;
-}}
+
 
 .link-filter {
     text-decoration: none;
@@ -121,6 +127,15 @@
 }
 
 /* footer */
+.container-foter{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-evenly;
+    }
+}
+
 .container-foter {
     @include desktop {
     display: flex;
