@@ -12,7 +12,7 @@
     text-transform: uppercase;
 }
 .box-social {
-    width: 100%;
+    width: 100vw;
     margin-top: 20px;
     @extend %centeredFlex;
     flex-direction: column;

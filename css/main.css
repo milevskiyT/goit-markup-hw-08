@@ -810,7 +810,7 @@ body {
 }
 
 .box-social {
-  width: 100%;
+  width: 100vw;
   margin-top: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
