@@ -7,8 +7,8 @@
      }
  }
  .benefits__list {
-     @include tablet { 
-        gap:30px;
+     @include tablet {
+        gap: 30px;
      }
  }
   .benefits__list {
@@ -34,28 +34,28 @@
     border-radius: 4px;
     margin-left: 0;
 }
+
+
 .peculiarities{
-    @media screen and (max-width:767px){
+    
         text-align: center;
-        
-        width: 450px;
+         width: 450px;
             height: 120px;
     }
-}
-.peculiarities {
-    @include tablet {
-
-        width: 354px;
-        height: 120px;
-    }
-}
+        .peculiarities {
+            @include tablet {
+                width: 354px;
+                height: 120px;
+            }
+        }
 .peculiarities {
     @include desktop {
         display: flex;
-width: 270px;
+        width: 270px;
         height: 120px;
     }
 }
+
 
 .peculiarities__icon {
     width: 70px;
