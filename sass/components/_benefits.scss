@@ -1,4 +1,26 @@
- 
+.container{
+
+@media screen and (min-width:480px) {
+max-width: 480px;
+
+}}
+.container {
+
+    @media screen and (min-width:767px) {
+        max-width: 767px;
+
+    }
+}
+.container {
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+
+    }
+}
+
+
+
 
  .benefits__list {
      @media screen and(max-width:1199px){
