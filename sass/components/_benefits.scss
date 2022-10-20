@@ -1,48 +1,100 @@
-.benefits__list {
-}
+ 
+
+ .benefits__list {
+     @media screen and(max-width:1199px){
+        display: flex;
+         flex-wrap: wrap;
+     }
+ }
+ .benefits__list {
+     @include tablet { 
+        gap:30px;
+     }
+ }
+  .benefits__list {
+      @include desktop {
+          display: flex;
+          gap: 30px;
+      }
+  }
+  .benefits__item {
+      @media screen and (max-width:767px) {
+          text-align: center;
+
+          width: 450px;
+          height: 120px;
+      }
+  }
+ 
+
 
 .peculiarities {
     @extend %centeredFlex;
-    width: 450px;
-    height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-left: 0;
+}
+.peculiarities{
+    @media screen and (max-width:767px){
+        text-align: center;
+        
+        width: 450px;
+            height: 120px;
+    }
+}
+.peculiarities {
+    @include tablet {
+
+        width: 354px;
+        height: 120px;
+    }
+}
+.peculiarities {
+    @include desktop {
+        display: flex;
+width: 270px;
+        height: 120px;
+    }
 }
 
 .peculiarities__icon {
     width: 70px;
     height: 70px;
 }
-
 .peculiarities__header {
-    text-align: center;
-    font-size: 14px;
+ @media screen and (max-width:767px) {
+     text-align: center;}}
+
+ .peculiarities__header {
+     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     margin-top: 30px;
+ }
 
-.peculiarities__text {
-    color:$--secondary-text;
-    margin-top: 10px;
-}
-.benefits__section {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  .peculiarities__text {
+   @media screen and (min-width: 767px) and (max-width: 1199px){
+        width: 354px;
+     color: $--secondary-text;
+      margin-top: 10px;
+  }}
+ .peculiarities__text {
+     color:$--secondary-text;
+     margin-top: 10px;
+ }
+ .benefits__section {
+     margin-top: 60px;
+     margin-bottom: 60px;
    
-}
+ }
 
 
 
 
 
 
-// .benefits__list {
-//     display: flex;
-//     gap: 30px;
-// }
+
 
 // .peculiarities {
 //     @extend %centeredFlex;

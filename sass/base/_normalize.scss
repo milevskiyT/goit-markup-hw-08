@@ -1,13 +1,23 @@
 *::before *::after {
     box-sizing: border-box;
 }
-.container {
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+// .container {
+//     width: 480px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+   .container {
+       position: relative;
+       width: 100vw;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;
+       height: auto;
+       padding-left: 15px;
+       padding-right: 15px;
+   }
 
 @include tablet {
     .container {
