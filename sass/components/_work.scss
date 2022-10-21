@@ -1,18 +1,14 @@
 .work {
     display: none;
-    
-    margin-bottom: 94px;
 }
 .work {
     @include desktop {
         display: block;
-        padding-top: 94px;
         padding-bottom: 94px;
     }
 }
 
 .work__header--margin {
-    padding-top: 60px;
     margin-bottom: 30px;
 }
 .work__header--margin {

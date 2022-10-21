@@ -553,8 +553,8 @@ body {
 }
 
 .benefits__section {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -567,10 +567,33 @@ body {
 
 .section__team {
   background-color: rgb(245, 244, 250);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-foto__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .team-foto__item:nth-last-child(n) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-foto__item:nth-last-child(n) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-foto__item:nth-last-child(n) {
+    margin-bottom: 0;
+  }
 }
 
 .team-foto__item {
@@ -670,19 +693,16 @@ body {
 
 .work {
   display: none;
-  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .work__header--margin {
-  padding-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -784,6 +804,7 @@ body {
 }
 
 .client-section {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
