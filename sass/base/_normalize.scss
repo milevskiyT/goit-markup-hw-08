@@ -14,10 +14,6 @@
 @include tablet {
     .container {
             width: 768px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: 0;
-            margin-right: auto;
             overflow: unset;
             
         }
@@ -28,10 +24,6 @@
 
 .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
     overflow: unset;
 }}
 @include desktop {

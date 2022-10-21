@@ -1765,20 +1765,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0;
-    margin-right: auto;
     overflow: unset;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
     overflow: unset;
   }
 }
