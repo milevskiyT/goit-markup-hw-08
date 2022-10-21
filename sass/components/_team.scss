@@ -11,15 +11,18 @@
         gap: 30px; }
        
 }
-.team-foto__item:nth-last-child(n) {
+.team-foto__item{
     margin-bottom: 30px;
     @include tablet{
-margin-bottom: 0;
+        margin-bottom: 0;
     }
-        @include desktop {
-            margin-bottom: 0;
-        }
-}   
+}
+
+.team-foto__item:nth-child(4) {
+margin-bottom: 0;
+}
+        
+
 
 .team-foto__item {
     background-color: $--primary-background-color;
@@ -71,7 +74,7 @@ margin-bottom: 0;
     line-height: 1.2;
     color: $--primary-text-color;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .team__position {
@@ -89,6 +92,9 @@ margin-bottom: 0;
 @extend %centeredFlex;
     gap: 10px;
     padding-bottom: 24px;
+    @include desktop{
+        padding-bottom: 30px;
+    }
 }
 
 .social-icon .social-icon__link {
