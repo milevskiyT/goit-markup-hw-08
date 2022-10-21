@@ -73,6 +73,10 @@
     padding: 10px 24px;
 @extend%transit;
 }
+&__button{
+    @include desktop{
+    padding: 10px 32px;
+}}
 
 &__button:hover,
 &__button:focus {

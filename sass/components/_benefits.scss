@@ -23,12 +23,7 @@ max-width: 480px;
 .benefits__item{
         width: 100%;
     }
-
- .benefits__list {
-     @media screen and(max-width:768px){
-      padding:0  15px;
-     }
- }
+    
  .benefits__list {
      @include tablet {
         gap: 30px;
