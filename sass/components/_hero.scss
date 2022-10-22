@@ -2,41 +2,18 @@
 
 /* hero section */
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/mobile/header/Header480.jpg);
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    width: 100vw;
     max-width: 1600px;
     min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-repeat: no-repeat;
     background-color: $--background-overlay;
     background-size: cover;
     background-position: center;
     margin: 0 auto;
     text-align: center;
-    @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/mobile/header/Header480@2x.jpg);
-        }
-    @include tablet{background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/tablet/hero/Header768.jpg); 
-        @include retina {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../../images/tablet/hero/Header768@2x.jpg);
-            }}
-    @include desktop{
-        padding-top: 200px;
-            padding-bottom: 200px;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/desktop/hero/hero1200.jpg);
-                @include retina {
-                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                            url(../../images/desktop/hero/hero1200@2x.jpg);
-            max-width: 1600px;
-            min-height: 600px;
-
-    }}
     
 
 
@@ -109,83 +86,3 @@
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-/* hero section */
-// .hero {
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../images/Img.jpg);
-//     max-width: 1600px;
-//     min-height: 600px;
-//     background-repeat: no-repeat;
-//     background-color: $--background-overlay;
-//     background-size: cover;
-//     background-position: center;
-//     margin: 0 auto;
-//     text-align: center;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-
-
-//     &__title {
-//         font-weight: 900;
-//         font-size: 26px;
-//         line-height: 1.6;
-//         letter-spacing: 0.06em;
-//         text-transform: uppercase;
-//         color: $--primary-background-color;
-//     }
-
-//     &__button--additionally {
-//         font-family: inherit;
-//         font-weight: 500;
-//         font-size: 16px;
-//         line-height: 1.6;
-//         letter-spacing: 0.03em;
-//         border-radius: 4px;
-//         color: $--primary-text-color;
-//         border: none;
-//         padding: 6px 22px;
-//         cursor: pointer;
-//         @extend%transit;
-//     }
-
-//     &__button--additionally:hover,
-//     &__button--additionally:focus {
-//         background-color: $--logo-link-color;
-//         color: $--primary-background-color;
-//         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//             0px 2px 2px rgba(0, 0, 0, 0.12);
-//     }
-
-//     &__button {
-//         font-family: inherit;
-//         font-weight: 700;
-//         font-size: 16px;
-//         line-height: 1.87;
-//         letter-spacing: 0.06em;
-//         color: $--primary-background-color;
-//         background-color: $--logo-link-color;
-//         cursor: pointer;
-//         border-radius: 4px;
-//         margin-top: 30px;
-//         padding: 10px 32px;
-//         @extend%transit;
-//     }
-
-//     &__button:hover,
-//     &__button:focus {
-//         color: $--primary-background-color;
-//         background-color: $--active-button;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     }
-
-// }
