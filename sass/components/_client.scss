@@ -12,11 +12,16 @@
     @extend %transit;
 }
 
+
 .client__container--list {
+            @media screen and (max-width:479px) {
+                justify-content: center;
+    }
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
 }
 
 .client-section {

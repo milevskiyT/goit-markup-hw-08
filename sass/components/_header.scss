@@ -38,7 +38,12 @@
         @include mobile {
             margin-bottom: 35px;
         }
+                @media screen and (max-width:479px){
+                    margin-bottom:35px;
+                }
     }
+    
+         
 
     .navigation__item:first-child {
         @include tablet {
@@ -51,23 +56,6 @@
             margin-bottom: auto;
         }
     }
-
-     
- 
-
-
-// .ligament,
-// .navigation {
-//     @include tablet {
-//             display: block;
-//         }
-// }
-// .ligament,
-// .navigation {
-//     @include desktop {
-//         display: block;
-//     }
-// }
 
 
 .header {

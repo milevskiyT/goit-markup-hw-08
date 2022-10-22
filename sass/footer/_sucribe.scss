@@ -26,6 +26,9 @@
     margin-top: 20px;
     @extend %centeredFlex;
     flex-direction: column;
+    @media screen and (max-width:479px) {
+            width:100%;
+        }
 }
 .box-social {
     @include desktop {
@@ -48,6 +51,9 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
+    @media screen and (max-width:479px) {
+           width:100%;
+        }
 }
 .footer-input {
     @include tablet{
