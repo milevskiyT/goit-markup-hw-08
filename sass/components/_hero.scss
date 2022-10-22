@@ -5,7 +5,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/mobile/header/Header480.jpg);
+        url(./images/desktop/hero/hero1200.jpg);
     
     max-width: 1600px;
     min-height: 400px;
@@ -17,22 +17,22 @@
     text-align: center;
     @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/mobile/header/Header480@2x.jpg);
+                url(./images/mobile/header/Header480@2x.jpg);
         }
     @include tablet{background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/tablet/hero/Header768.jpg); 
+            url(./images/tablet/hero/Header768.jpg); 
         @include retina {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../../images/tablet/hero/Header768@2x.jpg);
+                    url(./images/tablet/hero/Header768@2x.jpg);
             }}
     @include desktop{
         padding-top: 200px;
             padding-bottom: 200px;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/desktop/hero/hero1200.jpg);
+                url(./images/desktop/hero/hero1200.jpg);
                 @include retina {
                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                            url(../../images/desktop/hero/hero1200@2x.jpg);
+                            url(./images/desktop/hero/hero1200@2x.jpg);
             max-width: 1600px;
             min-height: 600px;
 
