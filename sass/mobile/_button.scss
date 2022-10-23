@@ -43,12 +43,14 @@
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
     z-index: 999;
     position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     padding: 48px 40px;
     background-color: $--primary-background-color;
     transform: translateX(100%);
@@ -166,7 +168,7 @@
     text-decoration: none;
 }
 .mobile-adress{
-    margin-top: 302px;
+    margin-top: auto;
 }
 .mobile-adress__item--current{
     margin-top: 32px;}
